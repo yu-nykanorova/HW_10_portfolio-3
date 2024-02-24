@@ -27,7 +27,6 @@ li {
 }
 
 .welcome {
-    max-width: 1400px;
     margin-inline: auto;
     background: #171718;
     text-align: center;
@@ -122,7 +121,7 @@ li {
     color: #fafafa;
 }
 
-.welcome__title span {
+.welcome__title h1 {
     color: #5c62ec;
 }
 
@@ -218,7 +217,6 @@ li {
 }
 
 .footer {
-    max-width: 1400px;
     margin-inline: auto;
     background: #171718;
     padding: 60px 0px 50px 0px;
@@ -281,14 +279,16 @@ li {
     }
     .header__ul {
         position: fixed;
-        width: 50%;
-        height: 50%;
+        width: 80%;
+        height: 10%;
         top: 0;
         left: 0;
         background: rgba(0, 0, 0, 0.83);
-        flex-direction: column;
         justify-content: center;
         transform: translateX(-100%);
+    }
+    .header__a {
+        font-size: 18px;
     }
     #header_check:checked ~ .header__ul {
         transform: translateX(0%);
@@ -318,6 +318,18 @@ li {
     .footer__social {
         margin-bottom: 18px;
         gap: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome__title {
+        font-size: 42px;
+    }
+    .welcome__title h1 {
+        font-size: 50px;
+    }
+    .welcome__desc {
+        font-size: 36px;
     }
 }
 
